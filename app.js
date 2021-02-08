@@ -24,28 +24,33 @@ class App {
 
         let employeeInfo =
             await inquirer
-                .prompt([
-                    {
-                        type: "input",
-                        message: "ID: ",
-                        name: "id"
-                    },
-                    {
-                        type: "input",
-                        message: "Name: ",
-                        name: "name"
-                    },
-                    {
-                        type: "input",
-                        message: "Email: ",
-                        name: "email"
-                    },
-                    {
-                        type: "input",
-                        message: "Title: ",
-                        name: "title"
-                    }
-                ]);
+            .prompt([{
+                    type: "list",
+                    message: "What is this employee's role?",
+                    name: "title",
+                    choices: ["Manager", "Intern", "Engineer"]
+                },
+                {
+                    type: "input",
+                    message: "ID: ",
+                    name: "id"
+                },
+                {
+                    type: "input",
+                    message: "Name: ",
+                    name: "name"
+                },
+                {
+                    type: "input",
+                    message: "Email: ",
+                    name: "email"
+                },
+                {
+                    type: "input",
+                    message: "Title: ",
+                    name: "title"
+                }
+            ]);
 
         switch (employeeInfo.title.toLowerCase()) {
             case 'manager':
@@ -68,13 +73,11 @@ class App {
     async getOfficeNumber(employeeInfo) {
         const managerInfo =
             await inquirer
-                .prompt([
-                    {
-                        type: "input",
-                        message: "Office Number: ",
-                        name: "officeNumber"
-                    }
-                ])
+            .prompt([{
+                type: "input",
+                message: "Office Number: ",
+                name: "officeNumber"
+            }])
 
         employeeInfo.officeNumber = await managerInfo.officeNumber;
 
@@ -84,13 +87,11 @@ class App {
     async getGithubHandle(employeeInfo) {
         let engineerInfo =
             await inquirer
-                .prompt([
-                    {
-                        type: "input",
-                        message: "GitHub handle: ",
-                        name: "github"
-                    }
-                ]);
+            .prompt([{
+                type: "input",
+                message: "GitHub: ",
+                name: "github"
+            }]);
 
         employeeInfo.github = await engineerInfo.github;
 
@@ -100,13 +101,11 @@ class App {
     async getSchoolInfo(employeeInfo) {
         let internInfo =
             await inquirer
-                .prompt([
-                    {
-                        type: "input",
-                        message: "School: ",
-                        name: "school"
-                    }
-                ]);
+            .prompt([{
+                type: "input",
+                message: "School: ",
+                name: "school"
+            }]);
 
         employeeInfo.school = internInfo.school;
 
@@ -191,14 +190,14 @@ class App {
 
     createServer(teamRoster) {
 
-        fs.writeFile('./public/team.html', teamRoster, function (err) {
+        fs.writeFile('./public/team.html', teamRoster, function(err) {
             if (err) throw err;
-            console.log('Saved!');
+            console.log('Roster Created');
         });
 
 
-        http.createServer(function (req, res) {
-            fs.readFile('./public/team.html', function (err, data) {
+        http.createServer(function(req, res) {
+            fs.readFile('./public/team.html', function(err, data) {
                 res.writeHead(200, { 'Content-Type': 'text/html' });
                 res.write(data);
                 res.end();
@@ -219,13 +218,11 @@ class App {
 
             input =
                 await inquirer
-                    .prompt([
-                        {
-                            type: "input",
-                            message: "Type 'yes' if you wish to exit",
-                            name: "exit"
-                        }
-                    ]);
+                .prompt([{
+                    type: "input",
+                    message: "Hit 'enter' to continue or type 'yes' if you wish to exit",
+                    name: "exit"
+                }]);
 
         } while (!input.exit);
 

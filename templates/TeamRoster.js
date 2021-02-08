@@ -24,7 +24,7 @@ class TeamRoster {
         </style>
         </head>
         <body>
-        <h1 class="text-center">Meet The Team</h1>
+        <h1 class="text-center">Team Roster</h1>
         <div class="container">
         <div id="root" class="row">
         ${this.team}
@@ -52,4 +52,3 @@ class TeamRoster {
 }
 
 module.exports = TeamRoster;
-
