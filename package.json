@@ -1,0 +1,32 @@
+{
+    "dependencies": {
+        "fs": "^0.0.1-security",
+        "inquirer": "^7.3.3",
+        "jest-cli": "^26.6.3",
+        "util": "^0.12.3"
+    },
+    "name": "hw10_team_profile",
+    "description": "",
+    "version": "1.0.0",
+    "main": "index.js",
+    "directories": {
+        "lib": "lib",
+        "test": "_test_"
+    },
+    "scripts": {
+        "test": "jest --verbose test/*"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/leskbook/HW10_Team_Profile.git"
+    },
+    "author": "Leslie Book",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/leskbook/HW10_Team_Profile/issues"
+    },
+    "homepage": "https://github.com/leskbook/HW10_Team_Profile#readme",
+    "devDependencies": {
+        "jest": "^26.6.3"
+    }
+}
