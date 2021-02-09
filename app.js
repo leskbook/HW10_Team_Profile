@@ -1,8 +1,7 @@
 const fs = require('fs');
 const http = require('http');
 const inquirer = require('inquirer');
-const figlet = require('figlet');
-const chalk = require('chalk');
+const emailValidator = ('email-validator');
 const Manager = require('./lib/Manager');
 const Engineer = require('./lib/Engineer');
 const Intern = require('./lib/Intern');
@@ -45,7 +44,8 @@ class App {
                 {
                     type: "input",
                     message: "Email: ",
-                    name: "email"
+                    name: "email",
+
                 },
                 {
                     type: "input",
