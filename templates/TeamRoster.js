@@ -20,19 +20,27 @@ class TeamRoster {
         .employee-title {
             font-size: 1.15rem;
             font-family: 'Josefin Slab', serif;
+            padding-left: 20px;
         }
         .badge {
             width: 100%;
             
         }
-        .card-title {
+        h1 {            
             font-family: 'Josefin Slab', serif;
-            padding-left: 20px;
+            color: white;
+            background-image: url(../public/assets/images/people.jpg);
+
         }
+        .card-title {            
+            font-family: 'Josefin Slab', serif;
+            padding-left: 20px;            
+        }
+
         </style>
         </head>
         <body>
-        <h1 class="text-center">Team Roster</h1>
+        <h1 class="text-center">Walter White Labcorp - Team Roster</h1>
         <div class="container">
         <div id="root" class="row">
         ${this.team}

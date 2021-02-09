@@ -22,8 +22,12 @@ class EmployeeProfile {
         if (this.title.toLowerCase() === 'manager') {
             this.html += `<img src="../public/assets/images/manager.png" class="card-img-top mt-5 img-fluid rounded mx-auto d-block"
                     alt="Employee Image" style="width: 50%;">`;
+
+        } else if (this.title.toLowerCase() === 'engineer') {
+            this.html += '<img src="../public/assets/images/webdev${this.setProfilePicture().png" class="card-img-top mt-5 img-fluid rounded mx-auto d-block" alt="Employee Image" style="width: 50%;">';
+
         } else {
-            this.html += `<img src="../public/assets/images/webdev${this.setProfilePicture()}.png" class="card-img-top mt-5 img-fluid rounded mx-auto d-block"
+            this.html += `<img src="../public/assets/images/intern${this.setProfilePicture()}.png" class="card-img-top mt-5 img-fluid rounded mx-auto d-block"
                     alt="Employee Image" style="width: 50%;">`;
         }
 
@@ -41,7 +45,7 @@ class EmployeeProfile {
                 this.html += `<li class="list-group-item"><span class="font-weight-bold">Office Phone: </span>${this.officeNumber}</li>`;
                 break;
             case 'engineer':
-                this.html += `<li class="list-group-item"><span class="font-weight-bold">GitHub: </span><a href="${this.github}"> ${this.github}</li>`;
+                this.html += `<li class="list-group-item"><span class="font-weight-bold">GitHub: </span><a href="${this.github}"> ${this.github}</a></li>`;
                 break;
             case 'intern':
                 this.html += `<li class="list-group-item"><span class="font-weight-bold">School: </span>${this.school}</li > `;

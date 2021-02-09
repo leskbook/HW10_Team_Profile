@@ -43,8 +43,8 @@ class App {
                 },
                 {
                     type: "input",
-                    message: "Email: ",
-                    name: "email",
+                    message: "Email(user@labcorp.com): ",
+                    name: "email"
 
 
                 },
@@ -224,7 +224,7 @@ class App {
                 .prompt([{
                     type: "input",
                     message: "Continue? Hit 'enter' for yes or 'exit' for no",
-                    name: "exit",
+                    name: "exit"
 
                 }]);
 

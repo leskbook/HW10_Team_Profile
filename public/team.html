@@ -15,19 +15,27 @@
         .employee-title {
             font-size: 1.15rem;
             font-family: 'Josefin Slab', serif;
+            padding-left: 20px;
         }
         .badge {
             width: 100%;
             
         }
-        .card-title {
+        h1 {            
             font-family: 'Josefin Slab', serif;
-            padding-left: 20px;
+            color: white;
+            background-image: url(../public/assets/images/people.jpg);
+
         }
+        .card-title {            
+            font-family: 'Josefin Slab', serif;
+            padding-left: 20px;            
+        }
+
         </style>
         </head>
         <body>
-        <h1 class="text-center">Team Roster</h1>
+        <h1 class="text-center">Walter White Labcorp - Team Roster</h1>
         <div class="container">
         <div id="root" class="row">
         <div class="col col-md-6 col-lg-6 col-xl-4">
@@ -41,8 +49,8 @@
             <h3 class="card-title">Walter White</h3>
             <ul class="card-text list-group">
             <li class="list-group-item"><span class="font-weight-bold">ID:</span> 100</li>
-            <li class="list-group-item"><span class="font-weight-bold">Email: </span><a href="mailto:thechemist@labcorp.com">thechemist@labcorp.com</a></li>
-            <li class="list-group-item"><span class="font-weight-bold">Office Phone: </span>25</li>
+            <li class="list-group-item"><span class="font-weight-bold">Email: </span><a href="mailto:chemist@labcorp.com">chemist@labcorp.com</a></li>
+            <li class="list-group-item"><span class="font-weight-bold">Office Phone: </span>45</li>
             </ul >            
             </div >
             </div >
@@ -52,14 +60,29 @@
             <div class="badge badge-primary mt-3 p-3">
             <span class="employee-title">Engineer</span>
             </div>
-            <img src="../public/assets/images/webdev2.png" class="card-img-top mt-5 img-fluid rounded mx-auto d-block"
-                    alt="Employee Image" style="width: 50%;">
+            <img src="../public/assets/images/webdev${this.setProfilePicture().png" class="card-img-top mt-5 img-fluid rounded mx-auto d-block" alt="Employee Image" style="width: 50%;">
             <div class="card-body">
-            <h3 class="card-title">Jessie Pinkman</h3>
+            <h3 class="card-title">Les Book</h3>
             <ul class="card-text list-group">
             <li class="list-group-item"><span class="font-weight-bold">ID:</span> 200</li>
-            <li class="list-group-item"><span class="font-weight-bold">Email: </span><a href="mailto:isell@labcorp.com">isell@labcorp.com</a></li>
-            <li class="list-group-item"><span class="font-weight-bold">GitHub: </span><a href="jessiepinkman" target="_blank" rel="noopener">jessiepinkman</li>
+            <li class="list-group-item"><span class="font-weight-bold">Email: </span><a href="mailto:lesbook@labcorp.com">lesbook@labcorp.com</a></li>
+            <li class="list-group-item"><span class="font-weight-bold">GitHub: </span><a href="leskbook"> leskbook</a></li>
+            </ul >            
+            </div >
+            </div >
+            </div >
+            <div class="col col-md-6 col-lg-6 col-xl-4">
+            <div class="card">
+            <div class="badge badge-primary mt-3 p-3">
+            <span class="employee-title">Engineer</span>
+            </div>
+            <img src="../public/assets/images/webdev${this.setProfilePicture().png" class="card-img-top mt-5 img-fluid rounded mx-auto d-block" alt="Employee Image" style="width: 50%;">
+            <div class="card-body">
+            <h3 class="card-title">Paul Wilson</h3>
+            <ul class="card-text list-group">
+            <li class="list-group-item"><span class="font-weight-bold">ID:</span> 202</li>
+            <li class="list-group-item"><span class="font-weight-bold">Email: </span><a href="mailto:pwilson@labcorp.com">pwilson@labcorp.com</a></li>
+            <li class="list-group-item"><span class="font-weight-bold">GitHub: </span><a href="pwilson"> pwilson</a></li>
             </ul >            
             </div >
             </div >
@@ -69,14 +92,31 @@
             <div class="badge badge-primary mt-3 p-3">
             <span class="employee-title">Intern</span>
             </div>
-            <img src="../public/assets/images/webdev7.png" class="card-img-top mt-5 img-fluid rounded mx-auto d-block"
+            <img src="../public/assets/images/intern4.png" class="card-img-top mt-5 img-fluid rounded mx-auto d-block"
                     alt="Employee Image" style="width: 50%;">
             <div class="card-body">
-            <h3 class="card-title">Alan Slacker</h3>
+            <h3 class="card-title">Jessie Slackman</h3>
             <ul class="card-text list-group">
             <li class="list-group-item"><span class="font-weight-bold">ID:</span> 300</li>
-            <li class="list-group-item"><span class="font-weight-bold">Email: </span><a href="mailto:aslacker@labcorp.com">aslacker@labcorp.com</a></li>
+            <li class="list-group-item"><span class="font-weight-bold">Email: </span><a href="mailto:jslackman@labcorp.com">jslackman@labcorp.com</a></li>
             <li class="list-group-item"><span class="font-weight-bold">School: </span>MIT</li > 
+            </ul >            
+            </div >
+            </div >
+            </div >
+            <div class="col col-md-6 col-lg-6 col-xl-4">
+            <div class="card">
+            <div class="badge badge-primary mt-3 p-3">
+            <span class="employee-title">Intern</span>
+            </div>
+            <img src="../public/assets/images/intern8.png" class="card-img-top mt-5 img-fluid rounded mx-auto d-block"
+                    alt="Employee Image" style="width: 50%;">
+            <div class="card-body">
+            <h3 class="card-title">Art Missing</h3>
+            <ul class="card-text list-group">
+            <li class="list-group-item"><span class="font-weight-bold">ID:</span> 301</li>
+            <li class="list-group-item"><span class="font-weight-bold">Email: </span><a href="mailto:amissing@labcorp.com">amissing@labcorp.com</a></li>
+            <li class="list-group-item"><span class="font-weight-bold">School: </span>NYU</li > 
             </ul >            
             </div >
             </div >
