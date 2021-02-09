@@ -1,7 +1,6 @@
 const fs = require('fs');
 const http = require('http');
 const inquirer = require('inquirer');
-const emailValidator = ('email-validator');
 const Manager = require('./lib/Manager');
 const Engineer = require('./lib/Engineer');
 const Intern = require('./lib/Intern');
@@ -9,13 +8,14 @@ const ManagerProfile = require('./templates/ManagerProfile');
 const EngineerProfile = require('./templates/EngineerProfile');
 const InternProfile = require('./templates/InternProfile');
 const TeamRoster = require('./templates/TeamRoster');
+const Choices = require('inquirer/lib/objects/choices');
 
 class App {
     constructor() {
         this.db = {
             manager: null,
             engineers: [], // Array of engineer object instances,
-            interns: [], // Also array of intern object intances
+            interns: [], // Array of intern object intances
         }
     }
 
@@ -29,11 +29,11 @@ class App {
                     type: "list",
                     message: "What is this employee's role?",
                     name: "title",
-                    choices: ["Manager", "Intern", "Engineer"]
+                    choices: ["Manager", "Engineer", "Intern"]
                 },
                 {
                     type: "input",
-                    message: "ID: ",
+                    message: "EmployeeID(100-999): ",
                     name: "id"
                 },
                 {
@@ -45,6 +45,7 @@ class App {
                     type: "input",
                     message: "Email: ",
                     name: "email",
+
 
                 },
                 {
@@ -222,8 +223,9 @@ class App {
                 await inquirer
                 .prompt([{
                     type: "input",
-                    message: "Hit 'enter' to continue or type 'yes' if you wish to exit",
-                    name: "exit"
+                    message: "Continue? Hit 'enter' for yes or 'exit' for no",
+                    name: "exit",
+
                 }]);
 
         } while (!input.exit);

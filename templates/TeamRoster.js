@@ -11,15 +11,23 @@ class TeamRoster {
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <!-- Bootstrap CSS -->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Josefin+Slab:ital,wght@1,500&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
             integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-        <title>Meet The Team</title>
+        <title>Team Roster</title>
         <style>
         .employee-title {
             font-size: 1.15rem;
+            font-family: 'Josefin Slab', serif;
         }
         .badge {
-            width: 50%;
+            width: 100%;
+            
+        }
+        .card-title {
+            font-family: 'Josefin Slab', serif;
+            padding-left: 20px;
         }
         </style>
         </head>

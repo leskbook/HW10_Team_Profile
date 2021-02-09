@@ -3,7 +3,7 @@ class EmployeeProfile {
     constructor(employee) {
         this.id = employee.id;
         this.name = employee.name;
-        this.email = employee.email;
+        this.email = employee.getEmail();
         this.title = employee.getRole();
 
         this.html;
@@ -14,7 +14,7 @@ class EmployeeProfile {
         this.html =
             `<div class="col col-md-6 col-lg-6 col-xl-4">
             <div class="card">
-            <div class="badge badge-info mt-3 p-3">
+            <div class="badge badge-primary mt-3 p-3">
             <span class="employee-title">${this.title}</span>
             </div>
             `;
@@ -33,7 +33,7 @@ class EmployeeProfile {
             <h3 class="card-title">${this.name}</h3>
             <ul class="card-text list-group">
             <li class="list-group-item"><span class="font-weight-bold">ID:</span> ${this.id}</li>
-            <li class="list-group-item"><span class="font-weight-bold">Email:</span> ${this.email}</li>
+            <li class="list-group-item"><span class="font-weight-bold">Email: </span><a href="mailto:${this.email}">${this.email}</a></li>
             `
 
         switch (this.title.toLowerCase()) {
@@ -41,7 +41,7 @@ class EmployeeProfile {
                 this.html += `<li class="list-group-item"><span class="font-weight-bold">Office Phone: </span>${this.officeNumber}</li>`;
                 break;
             case 'engineer':
-                this.html += `<li class="list-group-item"><span class="font-weight-bold">GitHub: </span>${this.github}</li>`;
+                this.html += `<li class="list-group-item"><span class="font-weight-bold">GitHub: </span><a href="${this.github}"> ${this.github}</li>`;
                 break;
             case 'intern':
                 this.html += `<li class="list-group-item"><span class="font-weight-bold">School: </span>${this.school}</li > `;
@@ -52,8 +52,7 @@ class EmployeeProfile {
 
         this.html +=
             `
-            </ul >
-            <a href="#" class="mt-3 btn btn-info btn-block">Contact</a>
+            </ul >            
             </div >
             </div >
             </div >
