@@ -4,6 +4,13 @@
 - Repository: https://github.com/leskbook/HW10_Team_Profile
 - Generated team.html: https://github.com/leskbook/HW10_Team_Profile/blob/main/public/team.html
 
+**Testing Walk-thru**
+https://youtu.be/vTntt2CPdYI
+
+**Demo walk-thru**
+https://youtu.be/DtsHvG3Y91M
+
+
 **Objective**
 
 The task is to build a Node.js command-line application that takes in information about employees on a software engineering team, then generates an HTML webpage that displays summaries for each person.
@@ -31,10 +38,6 @@ As a manager I want to generate a webpage that displays my team's basic info so 
  - WHEN I decide to finish building my team
  - THEN I exit the application, and the HTML is generated
 
-**Testing Walk-thru**
 
-https://youtu.be/vTntt2CPdYI
 
-**Demo walk-thru**
 
-https://youtu.be/DtsHvG3Y91M
