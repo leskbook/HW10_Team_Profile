@@ -1,6 +1,8 @@
 # HW10_Team_Profile
 
-**10 Object-Oriented Programming: Team Profile Generator** -- Repository https://github.com/leskbook/HW10_Team_Profile
+**10 Object-Oriented Programming: Team Profile Generator** 
+- Repository: https://github.com/leskbook/HW10_Team_Profile
+- Generated team.html: https://github.com/leskbook/HW10_Team_Profile/blob/main/public/team.html
 
 **Objective**
 
