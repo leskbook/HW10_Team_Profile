@@ -32,3 +32,11 @@ As a manager I want to generate a webpage that displays my team's basic info so 
 **Test walk-thru**
 
 https://youtu.be/vTntt2CPdYI
+
+**Funtionality walk-thru**
+
+https://youtu.be/FPkAChwW3s8
+
+**Generated Profile Page**
+
+https://youtu.be/msVweXRrKqM
