@@ -29,6 +29,10 @@ As a manager I want to generate a webpage that displays my team's basic info so 
  - WHEN I decide to finish building my team
  - THEN I exit the application, and the HTML is generated
 
+**Testing Walk-thru**
+
+https://youtu.be/vTntt2CPdYI
+
 **Demo walk-thru**
 
 https://youtu.be/DtsHvG3Y91M
